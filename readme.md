@@ -5,7 +5,8 @@ hi! we tried to get this working, but alas, we couldn't. we're not sure if this 
 - the current version hosted is **1:1** with the original archive we had, save for the .git folder.
 - even if you replace the original secret sky youtube id, it doesn't load. this might be for mobile devices only, but we couldn't get this to load on our iphone.
 - sometimes browsers just don't let you in. we've only had consistent success with safari on our macbook air, but we've seen it work on firefox for macOS on our partner's laptop, and *once* on firefox for windows on our PC.
-- you might need an hls stream source to get video to work? there's stuff that pertains to it (notably mentions of some dead M3U8s) in worlds/hlshelper/assets/js/app.js 
+- you might need an hls stream source to get video to work? there's stuff that pertains to it (notably mentions of some dead M3U8s) in worlds/hlshelper/assets/js/app.js
+- we were able to *almost* get video to work. replaced the HLS stream with CBS News' HLS stream, and it did show up in firefox picture-in-picture, but the virtual auditorium did not load at all. the auditorium loaded on macOS safari, but not the video stream.
 
 we couldn't figure this out, although we were able to otherwise still explore the auditorium again, just very silently. feel free to explore or try and mess with this. it's not our archive work, though, so the original readme is down below this.
 
