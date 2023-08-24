@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+	box-sizing: border-box;
+}
+
+html {
+    font-family: cursive;
+	font-size: 62.5%;
+}
+
+body, html, #Stage {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	-ms-content-zooming: none;
+	-ms-touch-action: none;
+	touch-action: none;
+	background: #f4f4f4;
+}
+
+#Stage, #Stage * {
+	position: absolute;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: none;
+}
+#Stage * input,  #Stage * textarea {
+	-moz-user-select: auto;
+	-webkit-user-select: auto;
+	-o-user-select: auto;
+	-ms-user-select: auto;
+	-webkit-tap-highlight-color: auto;
+}
+
+#Stage br, #Stage span, #Stage a {
+	position: relative;
+}
+
+#Stage a {
+	color: #000;
+}
+
+
+#Stage a:hover {
+	color: #888;
+}
+
+.VideoLayoutWrapper__video-wrapper-container::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.spinner-anim {
+	animation: rotate 3s infinite linear;
+	border-right: 3px solid #111111;
+	border-left: 3px solid #ffffff;
+	border-top: 3px solid #111111;
+	border-bottom: 3px solid #ffffff;
+	border-radius: 50%;
+}
+
+.spinner-anim-alt {
+	animation: rotate 3s infinite linear;
+	border-right: 2px solid #111111;
+	border-left: 3px solid #ffffff;
+	border-top: 3px solid #111111;
+	border-bottom: 3px solid #ffffff;
+	border-radius: 50%;
+}
+
+.infinite-increase{
+	animation: increase 3s infinite;
+}
+
+.infinite-increase--2{
+	animation: increase 3s 1.5s infinite;
+}
+
+.LoaderView {
+	background: #000;
+}
+
+.LoaderViewText {
+	font: 16px Courier;
+	color: #fff;
+}
+
+@keyframes rotate {
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+
+.bounce-fade {
+	animation: fade 3s infinite linear;
+}
+
+@keyframes fade {
+	0% { opacity: 1; }
+	50% { opacity: 0.2; }
+	100% { opacity: 1; }
+}
+
+@keyframes increase {
+	from { transform:translateX(-100%); width: 10%; }
+	to { transform:translateX(205%); width: 50%;}
+}
+
+#Stage .Panel *,
+#Stage .Notifications *,
+#Stage .Modal__content * {
+    position: relative;
+}
+
+.Agenda ::-webkit-scrollbar {
+    background: transparent;
+    width: 0;
+}
